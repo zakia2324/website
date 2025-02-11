@@ -1,0 +1,110 @@
+/* Responsive styles */
+@media (max-width: 768px) {
+    .portfolio-container {
+        flex-direction: column;
+    }
+    .left-container, .right-container {
+        width: 100%;
+    }
+    .about-col-1, .about-col-2 {
+        width: 100%;
+        text-align: center;
+    }
+    .about-col-1 img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px; /* Adjust the margin to move the image up */
+    }
+    .services-list {
+        flex-direction: column;
+        align-items: center; /* Center align the services */
+    }
+    .services-list div {
+        margin-bottom: 20px;
+        width: 100%; /* Ensure each service takes full width */
+        text-align: center; /* Center align text */
+    }
+    .navlist {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navlist li {
+        margin-bottom: 10px;
+    }
+    .content h2.intro {
+        font-size: 1.5em;
+    }
+    .content h1 {
+        font-size: 1.2em;
+    }
+    .content p.detail {
+        font-size: 1em;
+    }
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-container button {
+        margin-bottom: 10px;
+    }
+    .tab-titles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tab-titles p {
+        margin-bottom: 10px;
+    }
+    .design {
+        display: none; /* Hide circles on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .content h2.intro {
+        font-size: 1.2em;
+    }
+    .content h1 {
+        font-size: 1em;
+    }
+    .content p.detail {
+        font-size: 0.9em;
+    }
+    .btn-container button {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .services-list div {
+        padding: 10px;
+        width: 100%; /* Ensure each service takes full width */
+        text-align: center; /* Center align text */
+    }
+    .about-col-1 img {
+        width: 100%;
+        height: auto;
+        margin-top: 10px; /* Adjust the margin to move the image up */
+    }
+
+    .circle-mobile {
+        width: 100px;
+        height: 100px;
+        margin: 20px auto;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .right-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .right-container .circle {
+        width: 100px;
+        height: 100px;
+        margin: 20px auto;
+    }
+}
