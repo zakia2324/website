@@ -380,7 +380,7 @@ body {
         padding: 20px;
     }
     .circle-mobile {
-        display: block;
+        
         width: 100px;
         height: 100px;
         margin: 0 auto 20px;
@@ -392,10 +392,6 @@ body {
     .content .intro {
         margin-top: 20px;
     }
-}
-
-.circle-mobile {
-    display: none;
 }
 
 /* Add any specific styles here if needed */
