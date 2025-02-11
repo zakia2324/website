@@ -142,7 +142,8 @@ button:nth-child(2):hover {
 .circle:nth-child(2) {
     width: 30rem;
     background-image: url("girl pic.jpg"); /* Ensure the image path is correct */
-    background-size: 100%;
+    background-size: cover; /* Changed from 100% to cover */
+    background-position: center; /* Added to center the image */
     background-repeat: no-repeat;
     border: .1rem solid white;
     box-shadow: 0 0 1rem #fff,
@@ -253,6 +254,7 @@ body {
         width: 9rem;
         height: 10rem;
         margin-left: 70px;
+        background-size: cover; /* Ensure the image scales properly */
     }
 }
 
@@ -282,6 +284,11 @@ body {
         font-size: 1rem;
         padding: .6rem 1.2rem;
     }
+    .design .circle {
+        width: 20rem;
+        height: 20rem;
+        left: 60%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -306,9 +313,9 @@ body {
         display: none;
     }
     .design .circle {
-        width: 9rem;
-        height: 9rem;
-        margin-left: 70px;
+        width: 15rem;
+        height: 15rem;
+        left: 50%;
     }
     .about-col-1 img {
         width: 100%;
@@ -352,9 +359,11 @@ body {
         display: none;
     }
     .design .circle {
-        width: 9rem;
-        height: 9rem;
+        width: 10rem;
+        height: 10rem;
+        left: 50%;
         margin-left: 0;
+        background-size: cover; /* Ensure the image scales properly */
     }
     .about-col-1, .about-col-2 {
         flex-basis: 100%;
