@@ -379,6 +379,23 @@ body {
     .services-list div {
         padding: 20px;
     }
+    .circle-mobile {
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 20px;
+        border-radius: 50%;
+        background-image: url("circle-image.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .content .intro {
+        margin-top: 20px;
+    }
+}
+
+.circle-mobile {
+    display: none;
 }
 
 /* Add any specific styles here if needed */
