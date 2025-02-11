@@ -27,9 +27,12 @@
             }
             .services-list {
                 flex-direction: column;
+                align-items: center; /* Center align the services */
             }
             .services-list div {
                 margin-bottom: 20px;
+                width: 100%; /* Ensure each service takes full width */
+                text-align: center; /* Center align text */
             }
             .navlist {
                 display: flex;
@@ -85,6 +88,8 @@
             }
             .services-list div {
                 padding: 10px;
+                width: 100%; /* Ensure each service takes full width */
+                text-align: center; /* Center align text */
             }
             .about-col-1 img {
                 width: 100%;
@@ -104,6 +109,17 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+            }
+            .right-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .right-container .circle {
+                display: block;
+                width: 100px;
+                height: 100px;
+                margin: 20px auto;
             }
         }
         /* New styles for testimonials */
@@ -157,7 +173,11 @@
                 </div>
             </div>
         </div>
-        <div class="right-container"></div>
+        <div class="right-container">
+            <div class="circle">
+                <img src="circle-image.jpg" alt="Circle Image">
+            </div>
+        </div>
         <div class="design">
             <div class="circle"></div>
             <div class="circle"></div>
@@ -209,30 +229,21 @@
       <div id="services">
         <div class="container">
             <h1 class="sub-title2"><span>My Services</span></h1>
-            <div class="services-list">
-                <div>
+            <div class="services-list" style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+                <div style="flex: 1 1 30%; margin: 10px; box-sizing: border-box;">
                     <i class="fa-solid fa-code"></i>
                     <h2>Responsive Web Development</h2>
-                    <p>creating modern mobile-friendly websites using Next.js,Tailwind CSS, AND TypeScript
-
-                    </p>
-                    <!-- <a href="#">learn more</a> -->
+                    <p>Creating modern mobile-friendly websites using Next.js, Tailwind CSS, and TypeScript</p>
                 </div>
-
-                <div>
+                <div style="flex: 1 1 30%; margin: 10px; box-sizing: border-box;">
                     <i class="fa-solid fa-crop-simple"></i>
-                    <h2> Custom UI/UX Design</h2>
-                    <p>Translating Figma or design files into fully functional web pages with pixel perfect accuray.
-                    </p>
-                    <!-- <a href="#">learn more</a> -->
+                    <h2>Custom UI/UX Design</h2>
+                    <p>Translating Figma or design files into fully functional web pages with pixel-perfect accuracy.</p>
                 </div>
-
-                <div>
+                <div style="flex: 1 1 30%; margin: 10px; box-sizing: border-box;">
                     <i class="fa-brands fa-app-store-ios"></i>
                     <h2>App Design</h2>
-                    <p>Designing Apps
-                    </p>
-                    <!-- <a href="#">learn more</a> -->
+                    <p>Designing Apps</p>
                 </div>
             </div>
         </div>
