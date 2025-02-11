@@ -161,6 +161,8 @@ flex-basis: 35%;;
 .about-col-1 img{
 width: 100%;
 border-radius: 25px;
+max-width: 100%;
+height: auto;
 }
 .about-col-2{
     flex-basis: 60%;
@@ -209,7 +211,7 @@ border-radius: 25px;
 .tab-contents.active-tab{
     display: block;
 }
-/* ..............srvices............. */
+ /* ..............srvices............. */
 #services{
     padding: 30px 0;
     color: white;
@@ -285,12 +287,121 @@ body{ font-size:12px;
 @media(max-width:768px){
     .content{
         .detail{
-        
+        flex-direction: row;
             
             font-size: 8px;
             
         }
         }
+}
+
+@media (max-width: 1024px) {
+    .left-container {
+        width: 100%;
+        padding-left: 1rem;
+    }
+    .right-container {
+        display: none;
+    }
+    .content h1 {
+        font-size: 3rem;
+    }
+    .content .detail {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+    .btn-container button {
+        font-size: 1rem;
+        padding: .6rem 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navlist {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .navlist li a {
+        font-size: 0.9rem;
+    }
+    .content h1 {
+        font-size: 2.5rem;
+    }
+    .content .detail {
+        font-size: 0.9rem;
+    }
+    .btn-container button {
+        font-size: 0.9rem;
+        padding: .5rem 1rem;
+    }
+    .icons {
+        display: none;
+    }
+    .design .circle {
+        width: 9rem;
+        height: 9rem;
+        margin-left: 70px;
+    }
+    .about-col-1 img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navlist {
+        flex-direction: column;
+        gap: 0.5rem;
+        height: auto;
+        position: static;
+    }
+    .navlist li a {
+        font-size: 0.8rem;
+    }
+    .left-container, .right-container {
+        width: 100%;
+        padding: 1rem;
+    }
+    .content {
+        margin-left: 0;
+        text-align: center;
+    }
+    .content h1 {
+        font-size: 2rem;
+    }
+    .content .detail {
+        font-size: 0.8rem;
+    }
+    .btn-container button {
+        font-size: 0.8rem;
+        padding: .4rem 0.8rem;
+    }
+    .icons {
+        display: none;
+    }
+    .design .circle {
+        width: 9rem;
+        height: 9rem;
+        margin-left: 0;
+    }
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .about-col-1 img {
+        width: 100%;
+        height: auto;
+    }
+    .services-list {
+        grid-template-columns: 1fr;
+    }
+    .services-list div {
+        padding: 20px;
+    }
 }
 
 
