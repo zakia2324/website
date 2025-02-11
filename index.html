@@ -91,6 +91,15 @@
                 height: auto;
                 margin-top: 10px; /* Adjust the margin to move the image up */
             }
+            .design {
+                display: none; /* Hide circles on mobile */
+            }
+            .circle-mobile {
+                display: block;
+                width: 100px;
+                height: 100px;
+                margin: 20px auto;
+            }
         }
     </style>
 </head>
@@ -217,5 +226,8 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
 </script>
+<div class="circle-mobile">
+    <img src="circle-image.jpg" alt="Circle Image">
+</div>
 </body>
 </html>
