@@ -100,6 +100,30 @@
                 height: 100px;
                 margin: 20px auto;
             }
+            .content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        /* New styles for testimonials */
+        .testimonials {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .testimonials h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .testimonial-item {
+            margin: 20px 0;
+        }
+        .testimonial-item p {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+        .testimonial-item span {
+            font-weight: bold;
         }
     </style>
 </head>
@@ -112,6 +136,7 @@
             <li><a href="#">services</a></li>
             <li><a href="#">projects</a></li>
             <li><a href="#">contact</a></li>
+            <li><a href="#testimonials">testimonials</a></li>
         </ul>
         <div class="left-container">
             <div class="icons">
@@ -121,6 +146,9 @@
                 <i class="fa-brands fa-codepen"></i>
             </div>
             <div class="content">
+                <div class="circle-mobile">
+                    <img src="circle-image.jpg" alt="Circle Image">
+                </div>
                 <h2 class="intro">Hello, I Am<span> Zakia Shahan</span></h2>
                 <h1>Web Developer</h1>
                 <p class="detail">As a dedicated frontend developer,i specialize in crafting responsive,user-friendly interfaces that bridge design and functionality.With a strong foundation in HTML,CSS,Type Script, and modern library like Next.Js,i focus on creating seamless user experiences that not only look great but perform optimally across devices.My passion for clean,efficient code and attention to etail ensures that every project that i work on is both aesthetically pleasing and technically sound.I am comitted to continuous learning and staying up-to-date with the latest industry trends to deliver innovative solutions that meet user needs and exceed expectations.</p>
@@ -211,6 +239,19 @@
         </div>
       </div>
 
+    <!-- New testimonials section -->
+    <div id="testimonials" class="testimonials">
+        <h1>Testimonials</h1>
+        <div class="testimonial-item">
+            <p>"Zakia's work is outstanding. She delivered a top-notch website that exceeded our expectations."</p>
+            <span>- Client A</span>
+        </div>
+        <div class="testimonial-item">
+            <p>"Her attention to detail and dedication to the project were impressive. Highly recommend!"</p>
+            <span>- Client B</span>
+        </div>
+    </div>
+
 <script>
     var tablinks=document.getElementsByClassName("tab-links")
     var tabcontents=document.getElementsByClassName("tab-contents")
@@ -226,8 +267,5 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
 </script>
-<div class="circle-mobile">
-    <img src="circle-image.jpg" alt="Circle Image">
-</div>
 </body>
 </html>
